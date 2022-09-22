@@ -148,14 +148,14 @@ section .card{
 }
 section .mockup{
     position: absolute;
-  /*   top:150%;
-    left:-330px; */
+    top:50%;
+    right: -200px;
     opacity: 0;
     width: 80%;
     height: 70vh;
     transition: .6s;
     transition-delay: .6s;
-   /*  transform: translateY(-50%); */
+    transform: translateY(-50%);
     cursor: pointer;
 }
 section .mockup:after{
@@ -177,6 +177,26 @@ section .mockup:hover:after{
     content: "자세히보기"; /* 둘 다에 넣어야함 */
     opacity: 1;    
 }
+section.on .card{
+    position: absolute;
+    top:463px;
+    left:100px;
+    opacity: 1;
+}
+section.on .mockup{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 1;       
+}
+
+section.on .cardmockup{
+    position: absolute;
+    top:50%;
+    right: 0;
+    opacity: 1;
+}
 section .cardmockup{
     position: absolute;
     top:150px;
@@ -185,29 +205,18 @@ section .cardmockup{
     transition: .6s;
     transition-delay: .6s;
 }
-section.on .card{
-    position: absolute;
-    top:463px;
-    left:100px;
-    opacity: 1;
-}
-section.on .cardmockup{
-    position: absolute;
-    top:150px;
-    left:330px;
-    opacity: 1;
-}
-
-section.on .mockup{
-    position: absolute;
-    top:150px;
-    left: 330px;
-    opacity: 1;       
-}
 
 
-#work01 .mokup{
+
+
+
+#work01 .mockup{
     background: url("../img/work01_mockup.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#work02 .mockup{
+    background: url("../img/work02_mockup.jpg");
     background-size: cover;
     background-position: center center;
 }
