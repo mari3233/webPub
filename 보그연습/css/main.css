@@ -1,0 +1,159 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;  
+    transition: .3s;  
+}
+img{display: block}
+
+  
+header a{
+    width: 30%;
+    margin: 0 auto;
+}
+header img{
+    width: 100%;
+}
+header{
+    padding: 40px 0;
+}
+.gnb a{
+    text-align: center;
+    line-height: 24px;      /* .gnb li width주면 크기가 넓고 글씨가 안들어가서 뻈더니 글씨크기 그대로 다닥다닥 붙음 */
+    border-bottom: 2px #fff solid; /* hover했을때 밑에 빨간줄이 보이면서 사진이 밀림. 미리 흰색으로 공간을 만들어준다고 생각하고 색깔만 바꿔주면 된다 */
+}
+nav{
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+.gnb{    
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+}
+.gnb a:hover{
+    border-bottom: 2px darkred solid;
+}
+#contents{
+    width: 70%;
+    margin: 0 auto;
+}
+.mcon a{    
+    padding-top: 50%;
+    background: url(../img/conImg1.jpg); /* 배경을 이미지로 넣을때 세줄이 세트로 들어감. 특히 이미지 사이즈가 작을경우 */
+    background-size: cover;
+    background-position: center center;
+}
+.mcon2 a {
+    padding-top: 50%;    
+    background: url(../img/conImg2.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.mcon3 a{
+    padding-top: 50%;    
+    background: url(../img/conImg3.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox li{                                 
+    width: 33.33%;  
+    background: #aaf;
+}
+.imgbox li a{
+    padding-top: 150%; /* 원래는 imgbox li에 줬었으나 사진위에 a가 안뜸. */
+}
+.imgbox{
+    display: flex;
+    flex-wrap: wrap; /* 마지막 이미지는 여섯개. 한줄에 여섯장이 가득차서 작게 나온다. 넘치는거는 내려서 쌓아라가 됨 */
+}
+.imgbox li:nth-child(1){
+    background: url(../img/card1.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox li:nth-child(2){
+    background: url(../img/card2.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox li:nth-child(3){
+    background: url(../img/card3.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.imgbox2 li:nth-child(1){
+    background: url(../img/card4.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox2 li:nth-child(2){
+    background: url(../img/card5.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox2 li:nth-child(3){
+    background: url(../img/card6.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+.imgbox3 li:nth-child(1){
+    background: url(../img/card7.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox3 li:nth-child(2){
+    background: url(../img/card8.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox3 li:nth-child(3){
+    background: url(../img/card9.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox3 li:nth-child(4){
+    background: url(../img/card10.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox3 li:nth-child(5){
+    background: url(../img/card11.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+.imgbox3 li:nth-child(6){
+    background: url(../img/card12.jpg); 
+    background-size: cover;
+    background-position: center center;
+}
+
+
+footer a{
+    width: 30%;
+    margin: 0 auto;
+}
+footer img{
+    width: 100%;
+}
+footer{
+    padding: 40px 0;
+    background: #333;
+}
+#contents a{
+    box-sizing: border-box;   
+}
+#contents a:hover{
+    border: 8px #f33 solid;     
+}

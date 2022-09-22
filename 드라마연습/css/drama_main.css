@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#wrap{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border: 5px dodgerblue solid;
+}
+td:nth-child(odd){       /* odd 홀수, even 짝수 */
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+h1{line-height: 80px;}
+
+#wrap a{
+    line-height: 40px;
+}
+
+
+figure{
+    height: 214px;
+    overflow: hidden;
+}
+figcaption{
+    position: relative;
+    top: 0;
+    transition: .3s;
+}
+figure:hover figcaption{
+    top:-150px;
+    color: yellow;
+    
+}

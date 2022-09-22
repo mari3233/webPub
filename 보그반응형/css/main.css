@@ -1,0 +1,182 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto+Mono:wght@100;200;300;400;500&display=swap');
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: .3s;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+
+header a{
+    width: 30%;
+    margin: 0 auto;
+}
+header{
+    padding: 40px 0;
+    position: relative;
+}
+
+nav{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background: #eee;
+}
+.gnb a{
+    line-height: 24px;
+    border-bottom: 2px #eee solid;
+    font-family: 'Roboto Mono', monospace;
+}
+.gnb a:hover{
+    border-bottom: 2px darkred solid;
+    font-weight: 500;
+}
+.gnb{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+
+#contents{
+    width: 70%;
+    margin: 0 auto;
+}
+.imgBox li{
+    width: 33.3333%;
+}
+.imgBox{
+    display: flex;
+    flex-wrap: wrap; /* 넘치는 이미지 아래로 내려라 */
+}
+#contents a:hover{
+   outline: 10px darkred solid;
+   outline-offset: -10px;
+}
+
+
+
+
+
+
+footer a{
+    width: 30%;
+    margin: 0 auto;
+}
+footer{
+    padding: 40px 0;
+    background: #333;
+}
+
+
+
+
+
+
+
+
+.burger{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    display: none;   
+}
+.bar{
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    background: #777;
+    transition: .3s;
+}
+
+
+
+
+.burger.on .bar:nth-child(1){    /* on 일때 햄버거가 X 로 나오게 */
+    opacity: 0;
+}
+.burger.on .bar:nth-child(2){    
+    top: 16px; 
+    transform: rotate(45deg);  
+}
+.burger.on .bar:nth-child(3){ 
+    top: 16px;     
+    transform: rotate(-45deg);  
+}
+.burger.on .bar:nth-child(4){   
+    top: 32px;
+    opacity: 0;
+}
+
+
+
+
+
+.burger .bar:nth-child(1){   
+   opacity: 1;
+}
+.burger .bar:nth-child(2){ 
+    top: 16px;      
+    transform: rotate(0deg);    
+}
+.burger .bar:nth-child(3){  
+    top: 16px;      
+    transform: rotate(0deg);  
+}
+.burger .bar:nth-child(4){   
+    top: 32px;
+    opacity: 1;
+}
+
+
+
+
+
+
+.popup_nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: -150%; 
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    transition: .3s;   
+}
+.popup_nav.on{
+    left: 0;
+}
+.popup_nav a{
+    padding-left: 20px;
+    line-height: 40px;
+}
+.popup_nav a:hover{
+    background: darkolivegreen;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    nav{display: none;}
+    #contents{width: 90%;}
+    .burger{display: block;}
+    .popup_nav{display: block;}
+}
+
+

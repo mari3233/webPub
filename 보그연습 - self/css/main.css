@@ -1,0 +1,20 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+img{display: block;}
+
+header a{
+    width: 50%;
+    margin: 0 auto;
+}
+header img{
+    width: 100%;
+}
+header{
+    width: 80%;
+    
+}

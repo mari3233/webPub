@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        div{
+            width: 100px; height: 100px;
+            background: #ff3;
+            border: 1px #333 solid;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        var bg = document.querySelector("body");
+        document.addEventListener("mousemove", mm);
+        bg.addEventListener("click", create);
+        var cX, cY;
+
+        function mm(e){
+            cX = e.clientX;
+            cY = e.clientY;
+        }
+
+        function create(e){
+            var box = document.createElement("div");
+            box.style.top = cY+"px";
+            box.style.left = cX+"px";
+            if(e.target == bg){
+                bg.appendChild(box);
+            }else{
+                bg.removeChild(e.target);
+            }
+            
+        }
+    </script>
+</body>
+</html>
