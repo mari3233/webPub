@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slick slider 02</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <style>
+        *{margin: 0; padding: 0;}
+        li{list-style: none;}
+        .fakeimg{
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+        .slide{
+            width: 70%;
+            margin: 0 auto;
+            background: #ffa;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-wrap">
+        <div class="arrow prev"><i class="xi-angle-left"></i></div>
+        <div class="arrow next"><i class="xi-angle-right"></i></div>
+
+        <ul class="slide">
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감1<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감2<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감3<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감4<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감5<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감6<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감7<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감8<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감9<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감10<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감11<br>
+                    내용 들어감
+                </div>
+            </li>
+            <li>
+                <div class="fakeimg"></div>
+                <div class="text">
+                    제목 들어감12<br>
+                    내용 들어감
+                </div>
+            </li>
+        </ul>    
+    </div>
+    
+
+    <script>
+        $(".slide").slick({
+            slidesToShow : 5,
+            slidesToScroll : 3,
+            prevArrow : $('.prev'),     
+            nextArrow : $('.next'),   
+        });
+    </script>
+</body>
+</html>
