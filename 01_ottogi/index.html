@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>오뚜기</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick-style.css">    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>   
 </head>
 <body>
     <header>
        <!--  <i class="xi-cog"></i> -->
+       <div class="topicon">
+            <a href="#none"><i class="xi-globus"></i></a>
+            <a href="#none"> <i class="xi-cart"></i></a>       
+       </div>
         <div class="logo">
             <a href="#">
                 <img src="img/logo.png" alt="로고">
@@ -33,9 +40,58 @@
             </ul>
         </nav>
     </header>
+    <div id="dropdown">
+        <div class="dropdown">
+            <div>
+                <h3>회사소개</h3>
+                <h1>About</h1>
+                <p>
+                    365일 웃음 가득, 행복 가득. 언제나 고객과<br>
+                    함께 합니다.고객이 웃을 때 오뚜기는 행복합니다.
+                </p>
+            </div>
+            <div>
+                <ul class="introtab">
+                    <li><a href="#none">(주)오뚜기 ></a></li>
+                    <li><a href="#none">인재채용 ></a></li>
+                    <li><a href="#none">사업장 소개 ></a></li>
+                    <li><a href="#none">찾아오시는 길</a></li>
+                </ul> 
+            </div>               
+            <div>
+                <ul class="intro-tabcontent tab01">
+                    <li><a href="#none">회사 소개</a></li>
+                    <li><a href="#none">기업 이념</a></li>
+                    <li><a href="#none">오뚜기 CI</a></li>
+                    <li><a href="#none">창업주 풍림 함태호 생애</a></li>  
+                </ul>
+                <ul class="intro-tabcontent tab02">
+                    <li><a href="#none">인사제도</a></li>
+                    <li><a href="#none">직무소개</a></li>
+                    <li><a href="#none">공고 및 입사지원</a></li>                    
+                </ul>
+                <ul class="intro-tabcontent tab03">
+                    <li><a href="#none">국내사업장</a></li>
+                    <li><a href="#none">해외사업장</a></li>
+                    <li><a href="#none">중앙연구소</a></li>                    
+                </ul>
+            </div>     
+            <div>
+                <ul class="intro-button">
+                    <li><a href="#none">온라인 입사지원 <i class="xi-plus"></i></a></li>
+                    <li><a href="#none">ESG 경영<i class="xi-plus"></i></a></li>
+                    <li><a href="#none">공장견학 신청하기<i class="xi-plus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 
-    <div id="slide">
-        <ul>
+    <div class="slide-wrap">
+        <div class="arrow prev"><i class="xi-angle-left"></i></div>
+        <div class="arrow next"><i class="xi-angle-right"></i></div>
+
+        <ul class="main-slide">
             <li><a href="#"><img src="img/img_visual21.jpg" alt="슬라이드"></a></li>
             <li><a href="#"><img src="img/img_visual22.jpg" alt="슬라이드"></a></li>
             <li><a href="#"><img src="img/img_visual23.jpg" alt="슬라이드"></a></li>
@@ -49,39 +105,39 @@
     <div id="news">
         <ul class="imgbox">
             <li><a href="#"><img src="img/bgM1.jpg" alt="뉴스">
-            <div class="text">
-                <p>
-                    나눔미학<br>
-                    사회공헌<br>
-                    <span> more></span> 
-                </p>
-            </div>
+                <div class="text">
+                    <p>
+                        나눔미학<br>
+                        사회공헌<br>
+                        <span> more></span> 
+                    </p>
+                </div>
             </a></li>
             <li><a href="#"><img src="img/bgM3.jpg" alt="뉴스">
-            <div class="text">
-                <p>
-                    미래가치<br>
-                    투자정보<br>
-                    <span> more></span> 
-                </p>
-            </div>
+                <div class="text">
+                    <p>
+                        미래가치<br>
+                        투자정보<br>
+                        <span> more></span> 
+                    </p>
+                </div>
             </a></li>
             <li><a href="#"><img src="img/bgM4.jpg" alt="뉴스">
-            <div class="text">
-                <p>
-                    자연과함께<br>
-                    환경경영<br>
-                    <span> more></span> 
-                </p>
+                <div class="text">
+                    <p>
+                        자연과함께<br>
+                        환경경영<br>
+                        <span> more></span> 
+                    </p>
             </div> 
             </a></li>
             <li><a href="#"><img src="img/bgM6.jpg" alt="뉴스">
-            <div class="text">
-                <p>
-                    오뚜기몰<br>
-                    바로가기<br>
-                    <span> more></span> 
-                </p>
+                <div class="text">
+                    <p>
+                        오뚜기몰<br>
+                        바로가기<br>
+                        <span> more></span> 
+                    </p>
             </div> 
             </a></li>
         </ul>
@@ -143,16 +199,20 @@
     </ul>
 
 
-    <div id="hit">
+    <div id="hit" class="hit-slide-wrap">      
         <div class="hit_title">
             <div>오뚜기 인기상품</div>
             <div>―――――</div>
             <div>오뚜기의 인기상품들을 소개 합니다.</div>
-        </div>
-        <ul class="hit_slide">
+        </div>   
+        
+        <div class="hit-arrow hit-prev"><i class="xi-angle-left"></i></div>
+        <div class="hit-arrow hit-next"><i class="xi-angle-right"></i></div>
+
+        <ul class="hit_slide hit-slide" >
             <li>
                 <a href="#">
-                    <img src="img/proimg1.jpg" alt="">
+                    <img src="https://ottogi.co.kr/pds/product/2021-04-20_671244888[7].jpg  " alt="">
                     <p>프레스코 토마토 스파게티소스 <br>
                     조미소스/식품 > 스파게티소스
                     </p>
@@ -163,9 +223,9 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="img/proimg2.png" alt="">
-                    <p>프레스코 토마토 스파게티소스 <br>
-                        조미소스/식품 > 스파게티소스
+                    <img src="https://ottogi.co.kr/pds/product/2021-12-03_218710918[4].jpg" alt="">
+                    <p>컵누들 매콤찜닭맛 컵 <br>
+                        라면류 > 컵누들
                     </p>
                     <div class="overTxt">
                         <div>자세히 보기</div>
@@ -174,9 +234,9 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="img/proimg3.jpg" alt="">
-                    <p>프레스코 토마토 스파게티소스 <br>
-                        조미소스/식품 > 스파게티소스
+                    <img src="https://ottogi.co.kr/pds/product/2019-04-04_541245860[21].jpg" alt="">
+                    <p>핫케이크믹스 <br>
+                        분말/건조식품 > 프리믹스
                     </p>
                     <div class="overTxt">
                         <div>자세히 보기</div>
@@ -185,9 +245,9 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="img/proimg4.png" alt="">
-                    <p>프레스코 토마토 스파게티소스 <br>
-                        조미소스/식품 > 스파게티소스
+                    <img src="https://ottogi.co.kr/pds/product/2020-08-25_559393770[1].jpg" alt="">
+                    <p>맛있는 오뚜기 컵밥 톡톡김치알밥 <br>
+                        레토르트/간편식 > 컵밥
                     </p>
                     <div class="overTxt">
                         <div>자세히 보기</div>
@@ -196,9 +256,20 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="img/proimg5.jpg" alt="">
-                    <p>프레스코 토마토 스파게티소스 <br>
-                        조미소스/식품 > 스파게티소스
+                    <img src="https://ottogi.co.kr/pds/product/2022-02-08_108556933[5].jpg" alt="">
+                    <p>1/2하프마요네스 <br>
+                        조미소스/식품 > 마요네스
+                    </p>
+                    <div class="overTxt">
+                        <div>자세히 보기</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="https://ottogi.co.kr/pds/product/2022-03-17_367582465[3].jpg" alt="">
+                    <p>시그니처익스트림_콘크러스트_피자 530G <br>
+                        냉장/냉동식품 > 냉동피자
                     </p>
                     <div class="overTxt">
                         <div>자세히 보기</div>

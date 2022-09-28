@@ -6,18 +6,20 @@
     font-weight: normal;
     font-style: normal;
 }
-*{margin:0; padding:0; color:#333;}
+*{margin:0; padding:0; } 
 li{list-style: none;}
 a{
     text-decoration: none;
     display: block;
     color:inherit;
+    color:#333;
 }
 img{display: block; width:100%;}
 
 header{
     background:#ff3;
     padding-top: 20px;
+    position: relative;
 }
 
 .logo{
@@ -53,7 +55,7 @@ header{
 
 
 
-#slide{
+/* #slide{
     overflow: hidden;
 }
 #slide img{
@@ -96,7 +98,7 @@ header{
     100%{margin-left: -500%; opacity:0;}    
 }
 
-
+ */
 
 
 #news{
@@ -479,3 +481,167 @@ footer div:nth-child(3){
     font-size: 2rem;
     transform: translateY(10px);    
 }
+
+
+
+
+/* dropdown 메뉴 */
+
+#dropdown{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    z-index: 999999999;
+    display: none;   
+}
+/* #dropdown.on{
+    transform: translateY(0);
+    z-index: 1;
+} */
+.dropdown{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+.dropdown>div:nth-child(odd){
+    width: 30%;
+}
+.dropdown>div:nth-child(even){
+    width: 20%;
+}
+.dropdown>div{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.dropdown>div:nth-child(1){
+    padding-left: 110px;
+}  
+.dropdown>div:nth-child(1) h3{
+    line-height: 50px;
+}
+.dropdown>div:nth-child(1) h1{
+    line-height: 60px;
+}
+.dropdown>div:nth-child(1) p{
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+
+
+.intro-tabcontent{
+    display: none;
+}
+.introtab a:hover{
+    color: #f00;
+}
+.introtab a{
+    line-height: 32px;
+    font-size: 14px;
+}
+.intro-tabcontent a{
+    line-height: 32px;
+    font-size: 14px;
+}
+.intro-tabcontent a:hover{
+    color: #f00;   
+}
+
+
+
+.intro-button li{   
+    margin-bottom: 5px;
+}
+.intro-button a{
+    font-size: 16px;
+    text-align: center;
+    line-height: 36px;
+    border: 1px #ccc solid;  
+}
+.xi-plus{
+    color: #f00;
+}
+
+
+.topicon{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 80px;
+}
+.topicon a{
+    display: inline-block; /* 블럭요소여서 아래로 붙어서 수정 */
+    color: #f00;
+    font-size: 28px;
+}
+
+
+
+
+
+/* responsive(반응형)-평가항목임 */
+
+@media screen and (max-width:720px){
+    nav{display: none;}
+    .imgbox{
+        flex-wrap: wrap;
+    }
+    #news .imgbox li{
+        width: calc(50% - 20px);
+    }
+    .imgbox a .text{
+        top:0;
+    }
+    .textbox li{width: 50%;}
+    .textbox li:nth-child(3),
+    .textbox li:nth-child(4){
+        display: none;
+    }
+    #event{display: block;}
+    #event li{width: 100%;}
+
+    .tab, .tabcontent{
+        flex-wrap: wrap;
+    }
+    .tab li, .tabcontent li{
+        width: 50%;
+    }
+    .tabcontent li{
+        width: calc(50% - 4px);
+    }
+    .f_menu{
+        flex-wrap: wrap;
+    }
+    .f_menu li{
+        width: 50%;
+    }
+    #f_Menu > div{
+        display: block;
+    }
+    #f_Menu > div > ul{
+        width: 100%;
+        text-align: center;
+    }
+    #f_Menu > div > ul.f_sns{
+        width: 50%;
+        margin: 0 auto;
+    }
+    footer{
+        display: block;
+    }
+    footer>div{
+        width: 100% !important;/* 우선순위 무시하고 이 설정이 적용되도록 하는것 */  
+        text-align: center;             
+    }
+    footer>div:nth-child(2){
+        padding: 10px 0;
+
+    }
+    footer>div img{
+        width: 50%;
+        margin: 0 auto;
+    }  
+}
+
+
