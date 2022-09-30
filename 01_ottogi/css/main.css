@@ -270,7 +270,7 @@ header{
     padding: 30px 0;   
 }
 .hit_slide p{
-    font-size: .7rem;
+    font-size: .8rem;
     text-align: center;
     line-height: 1.4rem;
 }
@@ -299,6 +299,9 @@ header{
 .hit_title div:nth-child(3){
     font-size: .8rem;
     animation-delay: .5s;
+}
+span{
+    font-size: .6rem;
 }
 
 
