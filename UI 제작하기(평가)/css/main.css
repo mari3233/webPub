@@ -214,5 +214,14 @@ span{
 
 footer{
     background: #c8d2d3;
+    display: flex;
+}
+.copyright{
+    text-align: center;
+    color: #494a3f;
+    font-size: 14px;
+    line-height: 25px;
+    width: 60%;
+  
 }
 
