@@ -1,0 +1,120 @@
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+img{display: block;}
+
+header{height: 200px; display: flex; position: relative;}
+.logo{width: 15%; height: 200px; padding-left: 45px;}
+.logo img{width: 100%; padding: 80px 0;}
+nav{width: 70%;}
+.gnb a{text-align: center; line-height: 200px; font-size: 14px; color: #494a3f; }
+.gnb li{width:10%;}
+.gnb{width: 100%; display: flex; justify-content: space-evenly; }
+
+
+
+.header-reservation{
+    width: 15%;
+    position: absolute;
+    top: 90px; right: 0px;      
+}
+.header-reservation img{width: 100%;}
+
+.main-back img{width: 100%;}
+.main-back{position: relative;}
+.mb-text{
+    width: 30%;
+    position: absolute;
+    top:280px; left: 500px;
+    transform: translate(-50%,-50%);   
+    color: #494a3f;
+}
+.mb-text p{
+    text-align: center;
+    line-height: 30px;
+    color: #494a3f;
+}
+
+
+
+.intro .title{
+    line-height: 50px;
+    text-align: center;
+    line-height: 90px;
+    color: #494a3f;
+    padding-bottom: 60px;   
+}
+
+
+.view{display: flex;}
+.view-01{width: 50%;}
+.view-01 img{width: 100%;}
+.view-02{
+    width: 50%;
+    text-align: center;
+    padding-top: 80px; 
+    color: #494a3f; 
+}
+.view-02 h5{
+    font-size: 14px;
+    font-weight: normal;    
+    line-height: 50px;
+}
+.view-02 p{
+    font-size: 12px;
+    line-height: 30px;
+}
+
+
+.garden{display: flex;}
+.garden-01{
+    width: 50%;
+    text-align: center;
+    padding-top: 80px;
+    color: #494a3f;
+}
+.garden-02{
+    width: 50%;
+}
+.garden-02 img{width: 200%;}
+
+.garden-01{
+    text-align: center;
+    
+}
+.garden-01 h5{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 50px;
+}
+.garden-01 p{
+    font-size: 12px;
+    line-height: 30px;
+}
+
+
+
+
+.breakfast{display: flex;}
+.breakfast-01{width: 50%;}
+.breakfast-01 img{width: 100%;}
+.breakfast-02{
+    width: 50%;
+    text-align: center;
+    padding-top: 80px; 
+    color: #494a3f; 
+}
+.breakfast-02 h5{
+    font-size: 14px;
+    font-weight: normal;    
+    line-height: 50px;
+}
+.breakfast-02 p{
+    font-size: 12px;
+    line-height: 30px;
+}
