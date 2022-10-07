@@ -70,3 +70,18 @@ $(".burger").click(
         $("nav").toggleClass("on");
     }
 );
+
+//다크모드
+$(".btn").click(
+    function(){
+        $(".btn").toggleClass("active");
+        $("#profile").toggleClass("active")
+        var onoff = $(".btn").hasClass("active");
+        console.log(onoff);
+        if(onoff){
+            $(".btn-text").html("라이트모드");
+        }else{
+            $(".btn-text").html("다크모드");
+        }
+    }
+);

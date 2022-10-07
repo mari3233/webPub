@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사선이동 sin cos</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{
+            width: 300px;
+            height: 600px;
+            background: #faa;
+            position: absolute;
+            top: 20%; left: 20%;
+            transform:  rotate(60deg);
+            transition: .6s;
+        }
+        #profile.on .box{
+            transform: rotate(60deg) translateY(-300px); 
+           /*  top: calc(20% - 150px);
+            left: calc(20% + 259px); */            
+        }
+        #profile{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .bg-wrap{
+            width: 200%;
+            height: 200vh;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+        } 
+        #profile .bg-box1{
+            width: 45%;
+            height: 100%;
+            background: #faa;
+            transform: rotate(20deg) translateY(1000px);
+            transform-origin: 100% 50%; /* right center 해도됨 */
+            transition: .6s;
+        }
+        #profile .bg-box2{
+            width: 55%;
+            height: 100%;
+            background: #aaf;
+            transform: rotate(20deg) translateY(-1000px);
+            transform-origin: 0% 50%; /* left center 해도됨 */
+            transition: .6s;
+        }
+        #profile.on .bg-box1{           
+            transform: rotate(20deg);            
+        }
+        #profile.on .bg-box2{            
+            transform: rotate(20deg);           
+        }
+  
+
+    </style>
+</head>
+<body>
+    <section id="profile">
+        <div class="bg-wrap">
+            <div class="bg-box1"></div>
+            <div class="bg-box2"></div>
+        </div>        
+    </section>    
+</body>
+</html>
