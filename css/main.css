@@ -140,18 +140,64 @@ nav .gnb a.active{
     text-align: center;
     font-size: 3rem;
 } */
-#intro .title p{
+/* #intro .title p{
     font-size: 14px;
 }
 #intro .title span{
     font-weight: normal;
     font-size: 14px;
+} */
+#intro .title img{
+    width: 161px; height: 67px;
 }
-#profile .title{
+/* #profile .title{
     position: absolute;
     top:50%; left:50%;
     transform: translate(-50%, -50%);
+} */
+#profile .title li:nth-child(1){
+    width: 155px; height: 374px;
+    position: absolute;
+    top: 150px; left: 411px;
 }
+#profile .title li:nth-child(1) img{
+    width: 100%;
+}
+#profile .title li:nth-child(2){
+    width: 238px; height: 80px; 
+    position: absolute;
+    top:219px; left: 943px; 
+}
+#profile .title li:nth-child(2) img{
+    width: 238px; height: 80px;
+}
+#profile .title li:nth-child(3){
+    width: 238px; height: 109px; 
+    position: absolute;
+    top:423px; left: 943px; 
+}
+#profile .title li:nth-child(3) img{
+    width: 238px; height: 109px;
+}
+#profile .title li:nth-child(4){
+    width: 237px; height: 138px; 
+    position: absolute;
+    top:219px; left: 1198px; 
+}
+#profile .title li:nth-child(4) img{
+    width: 237px; height: 138px;
+}
+#profile .title li:nth-child(5){
+    width: 109px; height: 58px; 
+    position: absolute;
+    top:423px; left: 1198px; 
+}
+#profile .title li:nth-child(5) img{
+    width: 109px; height: 58px;
+}
+  
+
+
 section .card{
     position: absolute;
     bottom:15vh;
