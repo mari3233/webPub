@@ -148,7 +148,7 @@ nav .gnb a.active{
     font-size: 14px;
 } */
 #intro .title img{
-    width: 161px; height: 67px;
+    width: 161px; height: 75px;
 }
 /* #profile .title{
     position: absolute;
@@ -253,8 +253,8 @@ section.on .mockup{
 
 section.on .cardmockup{
     position: absolute;
-    top:50%;
-    right: 0;
+    top:200px;
+    right: 300px;
     opacity: 1;
 }
 section .cardmockup{
