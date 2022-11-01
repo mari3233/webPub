@@ -85,3 +85,16 @@ $(".btn").click(
         }
     }
 );
+
+
+
+
+/*#bxslider*/
+$('#bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+   /*  slideWidth: 0 */
+   //touchEnabled : false      #none 부분에 주소 붙여놓고 했을때 경로로 가는거 안먹을때?
+  });

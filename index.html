@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     
 </head>
 <body>
@@ -28,11 +33,11 @@
 
     <nav>
         <ul class="gnb">
-            <li><a href="#" datanum="0" class="active">Intro</a></li>
-            <li><a href="#" datanum="1">Profile</a></li>
-            <li><a href="#" datanum="2">Section3</a></li>
-            <li><a href="#" datanum="3">Section4</a></li>
-            <li><a href="#" datanum="4">Section5</a></li>
+            <li><a href="#" datanum="0" class="active">INTRO</a></li>
+            <li><a href="#" datanum="1">PROFILE</a></li>
+            <li><a href="#" datanum="2">OTTOGI</a></li>
+            <li><a href="#" datanum="3">VOGUE</a></li>
+            <li><a href="#" datanum="4">APP</a></li>
             <li><a href="#" datanum="5">Section6</a></li>
         </ul>
     </nav>
@@ -90,35 +95,40 @@
             </div>  
         </section>
         <section id="work01"><!-- 오뚜기 -->
-            <div class="card">
-                <img src="img/01 card.png" alt="">
+            <div class="card1">
+                <img src="img/profile-1-intro.png" alt="">
             </div>
             <a href="https://mari3233.github.io/webPub/01_ottogi/" target="_blank">
                 <div class="mockup"></div>
             </a>                     
         </section>
         <section id="work02"><!-- 보그 -->
-            <div class="card">
-                <img src="img/01 card.png" alt="">
-            </div>
+            <div class="card2">
+                <img src="img/profile-2-intro.png" alt="">
+            </div>    
             <a href="https://mari3233.github.io/webPub/vogue/" target="_blank">
                 <div class="mockup"></div>
             </a>            
         </section>
-        <section id="work03"><!-- 모바일용 홈페이지 제작 -->
-            <div class="card">
-                <img src="img/01 card.png" alt="">
+        <section id="work03"><!-- 모바일용 홈페이지 제작(게하 친구네집) -->
+            <div class="card3">
+                <img src="img/profile-3-intro.png" alt="">
             </div>
             <a href="https://www.figma.com/proto/h8Xn3sirZ39yP3wH9boW89/GUI-%EC%83%81%EC%84%B8-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%98%EA%B8%B0?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" target="_blank">
                 <div class="mockup"></div>
             </a>  
         </section>
-        <section>
+        <section> <!--6번째 섹션 bx 슬라이드-->>
             <div class="card">
-                <img src="img/01 card.png" alt="">
+                <!-- <img src="img/01 card.png" alt=""> -->
             </div>
-            <div class="cardmockup">
-                <img src="img/01 cardmockup.png" alt="">
+            <div class="mockup">                
+                <!--<img src="img/01 cardmockup.png" alt="">  -->
+                <ul id="bxslider">
+                    <li><a href="#none"><img src="img/work01_mockup.jpg" alt="슬라이드이미지" title="목업1"></a></li>
+                    <li><a href="#none"><img src="img/work02_mockup.jpg" alt="슬라이드이미지" title="목업2"></a></li>
+                    <li><a href="#none"><img src="img/work03_mockup.jpg" alt="슬라이드이미지" title="목업3"></a></li>
+                </ul>
             </div>
         </section>
     </div>
