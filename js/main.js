@@ -13,7 +13,7 @@ function go(e){
     count++;
     var goCount = count%5;
     if(e.wheelDelta < 0){
-        if(goCount == 4 && sectionCounter < 5){
+        if(goCount == 4 && sectionCounter < 6){
             sectionCounter++;
         }
     }else{

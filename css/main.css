@@ -10,14 +10,14 @@
 
 *{margin: 0; padding:0;}
 
-#bgvideo{
+/* #bgvideo{
     min-width:100%; 
     min-height:100vh;
     position: fixed;
     width:auto;
     height:auto;
     z-index: -999;
-}
+} */
 
 /* body{
     background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
@@ -199,7 +199,7 @@ nav .gnb a.active{
 #profile .title li:nth-child(1){
     width: 155px; height: 374px;
     position: absolute;
-    top: 219px; left: 411px;
+    top: 219px; left: 511px;
 }
 #profile .title li:nth-child(1) img{
     width: 100%;
@@ -265,7 +265,7 @@ section.on .card1{
     left:50px;
     opacity: 1;
 }
-section .card1 img,.card2 img, .card3 img, .card4 img{width: 100%;}
+section .card1 img,.card2 img, .card3 img, .card4 img, .card5 img{width: 100%;}
 
 
 section .card2{
@@ -313,7 +313,20 @@ section.on .card4{
     left:50px;
     opacity: 1;
 }
-
+section .card5{
+    position: absolute;
+    width: 142px;
+    height: 133px;
+    left: -150px;
+    top: 620px;
+    opacity: 0;
+    transition: .3s;
+}
+section.on .card5{
+    position: absolute;    
+    left:50px;
+    opacity: 1;
+}
 
 
 
@@ -411,6 +424,11 @@ section:last-child .mockup{
 }
 #work04 .mockup{
     background: url("../img/work04_mockup.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+#work05 .mockup{
+    background: url("../img/work05_mockup.jpg");
     background-size: cover;
     background-position: center center;
 }
